@@ -1,45 +1,70 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <link rel="stylesheet" type="text/css" href="styles/base.css">
         <meta charset="utf-8">
-        <meta name="viewport" content="widht=device-width, initial-scale=1.0">
-        <title>"WDD 131 - Dynamic Web Fundamentals"</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Dynamic Web Fundamentals - Eduardo Calle</title>
         <meta name="description" content="This page it's my index to my page.">
         <meta name="author" content="Eduardo Calle">
+
+        <link rel="stylesheet" type="text/css" href="styles/base.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+
         <script defer src="./scripts/getdates.js"></script>
     </head>
     <body>
+      <div class="container">
+
         <header>
             <h1>WDD 131 - Dynamic Web Fundamentals - Eduardo Calle</h1>
             <nav>
-                <a href="">LinkedIn</a>
-                <a href="">I-Learn</a>
-                <a href="">Scripture</a>
-                <a href="">Final Project</a>
+                <ul>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">I-Learn</a></li>
+                    <li><a href="#">Favorite Scripture</a></li>
+                    <li><a href="#">Final Project</a></li>
+                </ul>
             </nav>
         </header>
+
         <main>
             <section class="card-1">
                 <h2>About Me</h2>
-                <img class="profile-photo" src="images/profile.jpg" alt="Eduardo Calle!">
-                <p>Hello!  My name is Eduardo Calle, I am 21 years old, I am Peruvian.  With this course I am already finishing my first certificate in Pathway, so far the branch that fascinates me most in programming is Database, it is one of the courses with the highest percentage that I have and the one that I understood the fastest.  I love basketball, and soccer, I love dancing salsa, my favorite food is Aji de gallina<h3>Trujillo, Peru</h3>
-                <img class="trujillo-photo" src="images/trujillo.jpg" alt="Eduardo Calle!">
+              <div class="card-div">
+                <p>Hello!  My name is Eduardo Calle, I am 21 years old, I am Peruvian.  With this course I am already finishing my first certificate in Pathway, so far the branch that fascinates me most in programming is Database, it is one of the courses with the highest percentage that I have and the one that I understood the fastest. I love basketball, and soccer, I love dancing salsa, my favorite food is Aji de gallina.</p>
+                <img class="profile-photo" src="images/profile.jpg" alt="Imagen de perfil">
+              </div>    
+                <h3>Trujillo, Peru</h3>
+              <div class="card-div-2">  
+                <div class="bandera">
+                <img class="peru-photo" src="images/bandera-perú.png" alt="Bandera del Perú">
+                <h6>Official flag of Peru</h6>
+                </div>
                 <p>Trujillo is one of the largest cities in Peru. Trujillo was inhabited during the Inca era by the Chimú and Mochica civilizations, where its temples, 
-                    pyramids and mud cities stand out; also its deep-rooted customs, such as fishing in "caballitos de totora".</p>
+                pyramids and mud cities stand out; also its deep-rooted customs, such as fishing in "caballitos de totora".</p>  
+              </div>
             </section>
+
             <section class="card-2">
-                <h2>Web Dev Resources</h2>
+                <h2>Web Dev <br> Resources</h2>
+              <div class="recursos">
                 <ul>
                     <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
                     <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript">Mdn web Docs</a></li>
                     <li><a href="https://www.w3schools.com/js/default.asp">www.w3schools</a></li>    
-                   </ul>
+                </ul>
+              </div>
             </section>
         </main>
+
         <footer>
             <p>©<span id="currentYear"></span></p>
             <p id="lastModified"></p>
         </footer>
+        
+      </div>    
     </body>
 </html>
