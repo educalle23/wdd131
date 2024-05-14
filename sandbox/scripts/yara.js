@@ -1,1 +1,1 @@
-const link = document.querySelector("a");
+Object;
