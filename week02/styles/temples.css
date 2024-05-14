@@ -1,0 +1,127 @@
+:root{
+    --main-color: #C3CDB2;
+    --complementary-color: #fff;
+    --third-cholor: #3B4A3F;
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--main-color);
+    color: var(--complementary-color);
+    text-align: center;
+    align-self: center;
+    padding: 1rem;
+}
+
+header p{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+nav ul li{
+    padding: .4em;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+
+.navigator {
+    display: flex;
+    display: none;
+    flex-direction: column;
+    font-size: 1.5em;
+    align-content: center; 
+    text-align: center;  
+    color: var(--complementary-color);
+}
+
+
+.navigator a:hover {
+	background-color: #bbb;
+	color: var(--third-cholor);
+	font-weight: 700;
+}
+
+.navigator.open{
+    display: flex;
+    font-size: 1.6rem;
+}
+
+.open a {
+	display: block;
+    color: var(--third-cholor);
+}
+
+#nav-menu {
+    font-size: 2.5rem;
+    border: 0;
+    background: none;
+    color: var(--third-cholor);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#nav-menu::before {
+    content: "☰";
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#nav-menu.open::before {
+    content: "X";
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+}
+
+body{
+    background-color: #F7F4EA;
+}
+.album{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.album img{
+    max-height: 180px;
+}
+
+footer { 
+    max-height: 860px;  
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+footer p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+
+

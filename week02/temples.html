@@ -6,7 +6,7 @@
     <meta name="Author" content="Eduardo Calle">
     <meta name="Description" content="This is the the temples assigment, with JS and CSS
         I'm going to create a responsive and interactive layout">
-    <script src="scripts/temples.js"></script>
+    <script defer  src="./scripts/temples.js"></script>
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-larges.css">
     <title>Temples</title>
@@ -14,21 +14,24 @@
 <body>
     <header>
         <p>Temple Album</p>
-        <nav>
+        <button id="nav-menu"></button>
+        <nav class="navigator">
             <ul>
-                <li>
-                <a href="#">Home</a>
-                <a href="">Old</a>
-                <a href="">New</a>
-                <a href="">Large</a>
-                <a href="">Small</a>
-                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="">Old</a></li>
+                <li><a href="">New</a></li>
+                <li><a href="">Large</a></li>
+                <li><a href="">Small</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>Home</h1>
         <div class="album">
+            <figure>
+                <img src="images/temple-trujillo.jpeg" alt=" Peru, Trujillo's temple">
+                <figcaption>Trujillo Peru's Temple</figcaption>
+            </figure>
             <figure>
                 <img src="images/temple-trujillo.jpeg" alt=" Peru, Trujillo's temple">
                 <figcaption>Trujillo Peru's Temple</figcaption>
