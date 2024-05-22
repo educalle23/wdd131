@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Eduardo Calle">
+    <meta name="Description" content="It's lit">
+    <script defer src="./scripts/place.js"></script>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <title>Place</title>
+</head>
+<body>
+    <header>
+        <h1>Bolivia</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+              <source srcset="images/condor.webp" media="(min-width: 1000px)">
+              <img src="images/hero-small.webp" alt="Condor" width="500" height="250">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 1,098,581 sq km</p>
+            <p><strong>Population:</strong> 11,428,245</p>
+            <p><strong>Capital:</strong> Sucre (constitutional), La Paz (administrative)</p>
+            <p><strong>Languages:</strong> Spanish, Quechua, Aymara, Guarani</p>
+            <p><strong>Currency:</strong> Boliviano</p>
+            <p><strong>Time Zone:</strong> UTC-4</p>
+            <p><strong>Calling Code:</strong> +591</p>
+            <p><strong>Internet TLD:</strong> .bo</p>
+        </section>
+        <section class="weather">
+            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <p><strong>Temperature:</strong> <span id="temp">8°C</span></p>
+            <p><strong>Conditions:</strong> Cloudy</p>
+            <p><strong>Wind:</strong> 15 km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
