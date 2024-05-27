@@ -96,7 +96,7 @@ h2{
 body{
     background-color: #F7F4EA;
 }
-.col-3{
+.card-3{
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;

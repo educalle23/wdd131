@@ -128,7 +128,7 @@ function createTemplateCard(filteredTemples) {
         cardSection.appendChild(cardDedicated);
         cardSection.appendChild(cardArea);
         cardSection.appendChild(cardImageUrl);
-        cardSection.setAttribute('class', 'col-3');
+        cardSection.setAttribute('class', 'card-3');
       
         document.querySelector('.cards')
             .appendChild(cardSection);
