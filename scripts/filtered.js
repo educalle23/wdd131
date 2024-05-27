@@ -141,19 +141,19 @@ function createTemplateCard(filteredTemples) {
 
     itemMenu.forEach( button => {
         button.addEventListener( 'click', function(){
-        let menuRel = button.getAttribute('id');
+        let link = button.getAttribute('id');
         let filteredData;
-        if( menuRel == 'old' || menuRel == 'new' )
+        if( link == 'old' || link == 'new' )
         {
-            if (menuRel === 'new') {
+            if (link === 'new') {
                 filteredData = temples.filter(temple => checkOldNew(temple.dedicated));
             }
-            else if (menuRel == 'old'){
+            else if (link == 'old'){
                 filteredData = temples.filter(temple => !checkOldNew(temple.dedicated) && new Date(temple.dedicated).getFullYear() < 1900);
             }
         }
-        else if(menuRel == 'large' || menuRel == 'small'){
-            if( menuRel == 'large') {
+        else if(link == 'large' || link == 'small'){
+            if( link == 'large') {
             filteredData = temples.filter( temple => temple.area>90000);
             }
             else {
