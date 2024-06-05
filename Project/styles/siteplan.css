@@ -1,0 +1,40 @@
+:root{
+    --primary-cholor:#2B3B26;
+    --secondary-cholor:#cdeadc;
+    --background-cholor:#D5EBD9;
+    --border-line:#F9F7D2;
+}
+
+body{
+    background-color: var(--background-cholor);
+    margin: 0;
+    padding: 20px;
+}
+
+h1{
+    color:var(--primary-cholor);
+    text-align: center;
+    border-bottom: 2px solid var(--border-line);
+}
+
+h2{
+    color: var(--primary-cholor);
+    text-align: center;
+    padding: 1rem;
+}
+
+p{
+    text-align: justify;
+}
+
+img {
+    display: flex;
+    max-width: 400px;
+    align-items: center;
+    justify-content: center;    
+}
+.wireframes{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
