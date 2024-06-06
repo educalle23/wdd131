@@ -8,12 +8,20 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const productSelect = document.getElementById('product-name');
+    const avgRatingDisplay = document.getElementById('avg-rating');
 
     products.forEach(product => {
         const option = document.createElement('option');
         option.value = product.id;
         option.textContent = product.name;
+        option.dataset.avgRating = product.avg_rating;
         productSelect.appendChild(option);
+    });
+
+    productSelect.addEventListener('change', () => {
+        const selectedOption = productSelect.options[productSelect.selectedIndex];
+        const avgRating = selectedOption.dataset.avgRating;
+        avgRatingDisplay.textContent = avgRating ? `Average Rating: ${avgRating}` : '';
     });
 
     const today = new Date();
@@ -22,6 +30,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('currentYear').innerText = currentYear;
     document.getElementById('lastModified').innerText = `Last Modification: ${lastModifiedDate}`;
+
+    document.getElementById('reviewForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        updateReviewCounter();
+        window.location.href = 'review.html';
+    });
 });
 
 function updateReviewCounter() {

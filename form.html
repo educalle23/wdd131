@@ -11,20 +11,22 @@
 <body>
     <div class="container">
         <h1>Product Review</h1>
-        <form method="get" action="review.html">
+        <form id="reviewForm" method="get" action="review.html">
             <label for="product-name">Product Name*</label>
             <select id="product-name" name="product-name" required>
                 <option value="" disabled selected>Select a Product ...</option>
             </select>
             
-            <label>Overall Rating</label>
+            <div id="avg-rating" class="avg-rating"></div> 
+
+            <!-- <label>Overall Rating</label>
             <div class="rating">
                 <input type="radio" id="star5" name="rating" value="5" required><label for="star5">★</label>
-                <input type="radio" id="star4" name="rating" value="4" required><label for="star4">★</label>
-                <input type="radio" id="star3" name="rating" value="3" required><label for="star3">★</label>
-                <input type="radio" id="star2" name="rating" value="2" required><label for="star2">★</label>
-                <input type="radio" id="star1" name="rating" value="1" required><label for="star1">★</label>
-            </div>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+            </div> -->
             
             <label for="date-installation">Date of Installation*</label>
             <input type="date" id="date-installation" name="date-installation" required>
@@ -58,6 +60,6 @@
         <p>©<span id="currentYear"></span> Eduardo Calle | Trujillo - Peru</p>
         <p id="lastModified"></p>
     </footer>
-    <script defer src="scripts/form.js"></script>
+    <script src="scripts/form.js" defer></script>
 </body>
 </html>
