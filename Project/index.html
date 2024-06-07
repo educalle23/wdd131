@@ -1,26 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Eduardo Calle">
+    <meta name="author">
     <title>Silk Hand</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Silk Hand</h1>
-        <nav class="navigator">
+        <nav class="navigator">  
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">Services</a></li>
+                <li><a href="services.html">Services</a></li>
+                <a href="reserve.html" class="btn-reserva">Book an Appointment</a>
             </ul>
-            <button id="Reserve"><a href="reserve.html">Reserve</a>
         </nav>
     </header>
-    <div class="about-us">
-        
-    </div>
-    
+    <section class="hero">
+        <img src="image/masages-hero.jpg" alt="">
+        <div class="hero-text">
+            <h1>Let yourself be immersed in the latest trends</h1>
+        </div>
+    </section>
+    <section class="nosotros">
+        <h2>About us</h2>
+        <p>Marisol Calle entered the world of beauty more than 8 years ago, she started with a beauty salon where she provided hair treatment services, haircuts, nails, today her desire to provide a space of tranquility and personal reconnection, has led to honing his skills in alternative medicines.</p>
+        <a href="reserve.html" class="btn-reserva">Book an appointment</a>
+    </section>
+    <section class="mision-vision">
+        <div class="mision">
+            <h3>Mission</h3>
+            <p>At Silk Hand, we create a haven of relaxation and rejuvenation, blending innovation with tradition.</p>
+        </div>
+        <div class="vision">
+            <h3>Vision</h3>
+            <p>Create a community where you can feel comfortable and relieved from daily stress.</p>
+        </div>
+    </section>
+    <footer>
+        <p>©<span id="currentYear"></span> Eduardo Calle | Trujillo - Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script defer src="./scripts/index.js"></script>
 </body>
 </html>

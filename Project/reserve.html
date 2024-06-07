@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-larger.css">
 </head>
 <body>
-    <h1>HOLA</h1>
+    <header>
+        <h1>Silk Hand</h1>
+        <nav class="navigator">  
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Social Media</a></li>
+                <a href="#" class="btn-reserva">Reserva Aquí</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section class="contact-form">
+        <form method="get" action="thanks.html">
+            <div class="form-group">
+                <label for="nombre">Full Names*</label>
+                <input type="text" id="names" placeholder="Put your full Name" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Phone*</label>
+                <input type="tel" id="phone" placeholder="Your phone-number" required>
+            </div>
+            </div>
+            <div class="form-group">
+                <label for="horario">Time</label>
+                <select id="horario">
+                    <option value="">Please choose an option</option>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternon</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Appointment day</label>
+                <input type="date" id="date">
+            </div>
+            <div class="form-group">
+                <label>Servicios a Reservar</label>
+                <div class="radio-group">
+                    <label class="massage"><input type="checkbox" name="servicios" value="massage"> Massage</label>
+                    <label class="haircut"><input type="checkbox" name="servicios" value="haircut"> Haircut</label>
+                    <label class="mask"><input type="checkbox" name="servicios" value="facemask"> Face mask</label>
+                    <label class="reflexotherapy"><input type="checkbox" name="servicios" value="reflexotherapy"> Reflexotherapy</label>
+                </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <div id="thankYouMessage" class="thank-you-message" style="display:none;">
+        <p>Thank you for contacting us! We will get in touch with you soon.</p>
+        <button onclick="window.location.href='index.html';">Go to Homepage</button>
+    </div>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> Eduardo Calle | Trujillo - Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script defer src="./scripts/index.js"></script>
 </body>
 </html>

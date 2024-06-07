@@ -1,0 +1,103 @@
+@media (min-width: 800px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        text-align: center;
+        align-self: center;
+        padding: 1rem;
+    }
+    
+    nav h1{
+        display: flex;
+        font-size: 2.5rem;
+        color: var(--secondary-color);
+    }
+    
+    nav {
+        display: inline-block;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 0 1rem;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .contact-form {
+        background-color: white;
+        padding: .5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+        margin: 2rem auto;
+    }
+    
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    
+    .form-group label {
+        display: block;
+        margin: 1rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 70%;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-left: 1rem;
+    }
+    
+    button {
+        background-color: #163d4d;
+        color: white;
+        padding: .8rem 1rem;
+        margin: 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    .radio-group {
+        display: block;
+        width: 100px;
+    }
+    
+    .radio-group label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .radio-group input {
+        display: flex;
+        margin: 10px;
+        align-items: center;
+    }
+    
+    button:hover {
+        background-color: #183a27;
+    }
+    
+    
+}
